@@ -9,7 +9,7 @@
 
 </head>
 
-<body>
+<body class="">
 
     <section class="relative h-screen overflow-x-hidden border bg-white dark:border-zinc-900">
         <!-- Sidenav -->
@@ -105,32 +105,30 @@
             </ul>
         </nav>
         <!-- Sidenav -->
-        <!-- Toggler -->
-        <button
-            class="mt-10 block rounded bg-blue-600 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
-            data-te-sidenav-toggle-ref data-te-target="#mySidenav" aria-controls="#mySidenav" aria-haspopup="true">
-            <span class="block [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
-                    <path fill-rule="evenodd"
-                        d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                        clip-rule="evenodd" />
-                </svg>
-            </span>
-        </button>
-        <!-- Toggler -->
+        <div class="flex justify-center items-center">
+            <!-- Toggler -->
+            <button
+                class="mt-10 block rounded bg-blue-600 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
+                data-te-sidenav-toggle-ref data-te-target="#mySidenav" aria-controls="#mySidenav" aria-haspopup="true">
+                <span class="block [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
+            </button>
+            <!-- Toggler -->
+        </div>
 
-        <main id="swup" class="transition-fade block">
-            <div
-                class="text-3xl font-bold bg-SEPurple underline text-center sm:bg-SESky tablet:bg-SEBlue lg laptop1:bg-SEAmber ">
-                <a id="index" class="text-SEDarkBlue tablet:text-white block cursor-pointer"
-                    href="{{ url('/try/try') }}" data-swup-preload>
-                    go to second page
-                </a>
-            </div>
-
-            <p class="p-6">Lorem ipsum dolor sit.</p>
-            <p class="p-6">Perspiciatis deserunt officiis quam!</p>
-            <p class="p-6">Dolorum omnis facilis ex.</p>
+        <main id="swup" class="transition-fade">
+            <p class="p-4 text-2xl">Lorem, ipsum dolor.</p>
+            <p class="p-4 text-2xl">Culpa, accusamus provident!</p>
+            <a class="cursor-pointer border-pink-400 border-8 hover:border-amber-400 transition duration-300 text-5xl p-8 text-center block"
+                href="{{ url('', []) }}" data-swup-preload>
+                go to welcome</a>
+            <p class="p-4 text-2xl">Lorem, ipsum dolor.</p>
+            <p class="p-4 text-2xl">Culpa, accusamus provident!</p>
         </main>
 
         <p class="">Lorem, ipsum dolor.</p>
@@ -138,6 +136,7 @@
         <p class="">Ipsum, porro illo.</p>
 
     </section>
+
 </body>
 
 
